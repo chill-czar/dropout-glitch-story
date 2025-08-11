@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Menu, X, Code2, Lightbulb, Rocket, Building, Eye } from "lucide-react";
+import { Menu, X, User, Code2, FolderOpen, Briefcase, BookOpen, Mail, Eye } from "lucide-react";
 
 const chapters = [
   { id: "hero", label: "Start", icon: Code2 },
-  { id: "exit", label: "The Exit", icon: X },
-  { id: "grind", label: "The Grind", icon: Lightbulb },
-  { id: "mastery", label: "The Mastery", icon: Code2 },
-  { id: "agency", label: "The Agency", icon: Building },
-  { id: "future", label: "The Future", icon: Rocket }
+  { id: "about", label: "About Me", icon: User },
+  { id: "skills", label: "Skills", icon: Code2 },
+  { id: "projects", label: "Projects", icon: FolderOpen },
+  { id: "experience", label: "Experience", icon: Briefcase },
+  { id: "blog", label: "Blog", icon: BookOpen },
+  { id: "contact", label: "Contact", icon: Mail }
 ];
 
 export const Navigation = () => {
